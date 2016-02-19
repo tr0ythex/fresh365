@@ -1,0 +1,42 @@
+@media (max-width: 1100px) {
+  header.first_sec {
+    min-width: 0;
+    width: 90%;
+  }
+  header.first_sec ul.main_menu li {
+    font-size: 1.7vw;
+  }
+  header.first_sec .phone {
+    font-size: 2vw;
+  }
+  header.first_sec .logo {
+    width: 10%;
+    height: auto;
+  }
+
+  header.other_sec {
+    min-width: 0;
+  }
+  header.other_sec ul.main_menu li {
+    font-size: 1.7vw;
+  }
+  header.other_sec .phone {
+    font-size: 2vw;
+  }
+  header.other_sec .logo {
+    left: 7%;
+  }
+
+  #head_section .slogan {
+    width: 35%;
+  }
+  #head_section .slogan h2 {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+  #head_section .slogan button {
+    font-size: 2vw;
+    width: 48%;
+    height: 25%;
+  }
+}
