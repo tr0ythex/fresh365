@@ -1,0 +1,32 @@
+[
+ { 
+   "name": "Лук севок", 
+   "price": 10, 
+   "pack": 500, 
+   "amount": 5
+ },
+ { 
+   "name": "Лук порей", 
+   "price": 10, 
+   "pack": 600, 
+   "amount": 6
+ },
+ { 
+   "name": "Шпинат", 
+   "price": 10, 
+   "pack": 20, 
+   "amount": 8
+ },
+ { 
+   "name": "Укроп", 
+   "price": 10, 
+   "pack": 20, 
+   "amount": 10
+ },
+ { 
+   "name": "Петрушка", 
+   "price": 10, 
+   "pack": 50, 
+   "amount": 12
+ }
+]

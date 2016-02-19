@@ -8,9 +8,23 @@
   <link rel="stylesheet" href="stylesheets/styles-1100.css" type="text/css" />
   <link rel="stylesheet" href="stylesheets/lib/onepage-scroll.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/lib/magnific-popup.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script>
+		  /* global angular */
+			var myApp = angular.module("demo", []);
+			myApp.controller("demoCtrl", function ($scope, $http) {
+				$http.get("todo.json").then(function (response) {
+        		$scope.todos = response.data;
+      		}, function () {
+        		$scope.todos = [{action: "Error"}];
+      		}).then(function () {
+        		$scope.todos.push({action: "Request Complete"});
+				});
+			});
+		</script>
 </head>
 
-<body>
+<body ng-controller="demoCtrl">
   <header class="other_sec">
     <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
     
