@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="fresh365">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
@@ -8,23 +8,9 @@
   <link rel="stylesheet" href="stylesheets/styles-1100.css" type="text/css" />
   <link rel="stylesheet" href="stylesheets/lib/onepage-scroll.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/lib/magnific-popup.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-		<script>
-		  /* global angular */
-			var myApp = angular.module("demo", []);
-			myApp.controller("demoCtrl", function ($scope, $http) {
-				$http.get("todo.json").then(function (response) {
-        		$scope.todos = response.data;
-      		}, function () {
-        		$scope.todos = [{action: "Error"}];
-      		}).then(function () {
-        		$scope.todos.push({action: "Request Complete"});
-				});
-			});
-		</script>
 </head>
 
-<body ng-controller="demoCtrl">
+<body ng-controller="vegCtrl">
   <header class="other_sec">
     <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
     
@@ -113,19 +99,19 @@
         <tr>
           <td>Лук севок</td>
           <td>10 руб/кг</td>
-          <td>&#x2714;</td>
+          <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons"><div class="total">1</div></td>
+          <td class="buttons total_btn"><div class="total">0</div></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
         </tr>
-        <tr>
+         <tr>
           <td>Лук порей</td>
           <td>10 руб/кг</td>
-          <td>&#x2714;</td>
+          <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -133,23 +119,19 @@
         <tr>
           <td>Шпинат</td>
           <td>10 руб/кг</td>
-          <td>
-            <svg width="20px" height="10px" viewBox="0 0 20 10">
-              <line x1="5" x2="15" y1="5" y2="5" stroke="white" stroke-width="4" stroke-linecap="round"/>
-            </svg>
-          </td>
+          <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons"><div class="total disable">0</div></td>
-          <td class="buttons"><div class="plus_btn disable">+</div></td>
-          <td class="buttons"><div class="minus_btn disable">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn disable">&#10006;</div></td>
+          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons"><div class="plus_btn">+</div></td>
+          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
+          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
         </tr>
         <tr>
           <td>Укроп</td>
           <td>10 руб/кг</td>
-          <td>&#x2714;</td>
+          <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons"><div class="total">1</div></td>
+          <td class="buttons total_btn"><div class="total">0</div></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -157,9 +139,9 @@
         <tr>
           <td>Петрушка</td>
           <td>10 руб/кг</td>
-          <td>&#x2714;</td>
+          <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons"><div class="total">5</div></td>
+          <td class="buttons total_btn"><div class="total">0</div></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -406,6 +388,32 @@
       });
     }
 	
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.plus_btn').click(function(){
+        var $amount = $(this).parent().siblings(".amount");
+        var $total = $(this).parent().siblings(".total_btn").children(".total");
+        if ($amount.html() > 0) {
+          $amount.html($amount.html() - 1);
+          $total.html(parseInt($total.html()) + 1);
+        }
+      });
+      $('.minus_btn').click(function(){
+        var $amount = $(this).parent().siblings(".amount");
+        var $total = $(this).parent().siblings(".total_btn").children(".total");
+        if ($total.html() > 0) {
+          $total.html($total.html() - 1);
+          $amount.html(parseInt($amount.html()) + 1);
+        }
+      });
+      $('.clear_btn').click(function(){
+        var $amount = $(this).parent().siblings(".amount");
+        var $total = $(this).parent().siblings(".total_btn").children(".total");
+        $total.html(0);
+        $amount.html(5);
+      });
+    });
   </script>
 </body>
 </html>
