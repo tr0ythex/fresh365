@@ -383,7 +383,6 @@
         var $hidden = $total.siblings("input[type=hidden]");
         $total.html(parseInt($total.html()) + 1);
         $hidden.attr('value', $total.html());
-        // }
       });
       $('.minus_btn').click(function(){
         var $total = $(this).parent().siblings(".total_btn").children(".total");
