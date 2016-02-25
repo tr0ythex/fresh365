@@ -50,14 +50,9 @@
     <div class="about_section_block products">
       <img class="about_section_pic" src="images/trava_1.png">
       <h2>О продукции</h2>
-      <p>Свежие овощи и зелень от компании ООО «Свежесть 365» — 
-         это радуга вкуса и свежести для потребителей России!</p>
-      <p>Мы предлагаем широкий ассортимент продукции собственного 
-         производства мелким и крупным оптом по приемлемым ценам. 
-         Вся продукция сертифицирована, имеет высокий стандарт 
-         качества и полное соответствие экологическим и санитарно-
-         эпидемиологическим нормам, принятым в Российской 
-         Федерации.</p>
+      <p>Русское фермерское хозяйство «Свежесть 365» 
+        на производстве и продаже свежей зелени и овощей.</p>
+      <p>Мы выращиваем на собственных плодородных землях в Тульской области. </p>
       <div class="vegetables_collection">
         <div class="vegetables_item">Лук севок</div>
         <div class="vegetables_item">Укроп</div>
@@ -72,19 +67,16 @@
     <div class="about_section_block company">
       <img class="about_section_pic" src="images/logo_2.png">
       <h2>О компании</h2>
-      <p>Общество с ограниченной ответственностью «Свежесть – 365» 
-         основано в соответствии с Федеральным законом Российской 
-         Федерации «Об обществах с ограниченной ответственностью» и 
-         другими нормативными актами, непротиворечащими 
-         Гражданскому Кодексу Российской Федерации.</p>
-      <p>Мы занимаемся производством сельскохозяйственной продукции 
-         (овощи, зелень) и ее продажей.</p>
-      <p>Основная деятельность предприятия – это производство 
-         сельскохозяйственной продукции, и ее оптовый сбыт.</p>
+      <p>Из 200 га полей, 5 га занимают промышленный теплицы, оснащенные современной системой отопления и полива.</p>
+      <p>Сочетание высоких технологий и лучших традиций земледелия, обеспечивает максимальный урожай, 
+      а собственный склад с необходимым температурным режимом, гарантирует долгую свежесть нашей продукции.</p>
     </div>
   </section>
     <section id="price_section">
     <div class="order_block">
+      <h2 id="success_sent">Заказ успешно отправлен. Мы свяжемся с вами в ближайшее время</h2>
+      <h2 id="error_sent">Произошла ошибка при отправке заказа. Пожалуйста, перезагрузите страницу и попробуйте позже</h2>
+      <form id="order_form" action="index.php" method="post">
       <table class="order_table">
         <tr class="heading">
           <th colspan="4"><h2>Закажите сейчас!</h2></th>
@@ -101,7 +93,7 @@
           <td>10 руб/кг</td>
           <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_1" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -111,7 +103,7 @@
           <td>10 руб/кг</td>
           <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_2" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -121,7 +113,7 @@
           <td>10 руб/кг</td>
           <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_3" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -131,7 +123,7 @@
           <td>10 руб/кг</td>
           <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_4" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
@@ -141,21 +133,23 @@
           <td>10 руб/кг</td>
           <td class="amount">5</td>
           <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div></td>
+          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_5" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
           <td class="buttons"><div class="minus_btn">&#8722;</div></td>
           <td class="buttons"><div class="clear_btn">&#10006;</div></td>
         </tr>
         <tr class="credentials">
-          <td colspan="2"><input type="text" name="full_name" placeholder="ФИО"/></td>
-          <td colspan="2"><input type="email" name="email" placeholder="E-mail"/></td>
+          <td colspan="2"><input type="text" name="full_name" id="full_name" placeholder="ФИО" required/></td>
+          <td colspan="2"><input type="email" name="email" id="email" placeholder="E-mail" required/></td>
           <td colspan="4"></td>
         </tr>
         <tr class="order">
-          <td colspan="4"><input type="submit" name="submit" value="Заказать"/></td>
+          <td colspan="4"><input type="submit" name="submit" id="order_form_submit" value="Заказать"/></td>
           <td colspan="4"></td>
         </tr>
+
       </table>
+      </form>
     </div>
   </section>
     <section id="header_section">
@@ -165,23 +159,20 @@
       </div>
       <div class="header_block h_left h_top">
         <h2>Заголовок</h2>
-        <p>Свежие овощи и зелень от компании ООО «Свежесть 365» – 
-        это радуга вкуса и свежести для потребителей России!</p>
+        <p>Обработкой заказов занимается главный офис, расположенный в Москве</p>
       </div>
       <div class="header_block h_right h_top">
         <h2>Заголовок</h2>
-        <p>Свежие овощи и зелень от компании ООО «Свежесть 365» – 
-        это радуга вкуса и свежести для потребителей России!</p>
+        <p>Вся продукция хранится на складе с необходимым температурным режимом в 5 километрах от Москвы.</p>
       </div>
       <div class="header_block h_right h_bottom">
         <h2>Заголовок</h2>
-        <p>Свежие овощи и зелень от компании ООО «Свежесть 365» – 
-        это радуга вкуса и свежести для потребителей России!</p>
+        <p>Каждое утро наши водители развозят свежую зелень и овощи клиентам компании</p>
       </div>
       <div class="header_block h_left h_bottom">
         <h2>Заголовок</h2>
-        <p>Свежие овощи и зелень от компании ООО «Свежесть 365» – 
-        это радуга вкуса и свежести для потребителей России!</p>
+        <p>Овощи и зелень соответствуют самым строгим требованиям экологической безопасности, 
+        что регулярно подтверждается сертификатами качества.</p>
       </div>
     </section>
     <section id="novelty_section">
@@ -394,24 +385,89 @@
       $('.plus_btn').click(function(){
         var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
+        var $hidden = $total.siblings("input[type=hidden]");
         if ($amount.html() > 0) {
           $amount.html($amount.html() - 1);
           $total.html(parseInt($total.html()) + 1);
+          $hidden.attr('value', $total.html());
         }
       });
       $('.minus_btn').click(function(){
         var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
+        var $hidden = $total.siblings("input[type=hidden]");
         if ($total.html() > 0) {
           $total.html($total.html() - 1);
           $amount.html(parseInt($amount.html()) + 1);
+          $hidden.attr('value', $total.html());
         }
       });
       $('.clear_btn').click(function(){
         var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
+        var $hidden = $total.siblings("input[type=hidden]");
         $total.html(0);
         $amount.html(5);
+        $hidden.attr('value', 0);
+      });
+
+      var request;
+
+      // Bind to the submit event of our form
+      $("#order_form").submit(function(event){
+
+        // Abort any pending request
+        if (request) {
+          request.abort();
+        }
+        // setup some local variables
+        var $form = $(this);
+
+        // Let's select and cache all the fields
+        var $inputs = $form.find("input, select, button, textarea");
+
+        // Serialize the data in the form
+        var serializedData = $form.serialize();
+
+        // Let's disable the inputs for the duration of the Ajax request.
+        // Note: we disable elements AFTER the form data has been serialized.
+        // Disabled form elements will not be serialized.
+        $inputs.prop("disabled", true);
+
+        // Fire off the request to /form.php
+        request = $.ajax({
+            url: "/send_mail.php",
+            type: "post",
+            data: serializedData
+        });
+
+        // Callback handler that will be called on success
+        request.done(function (response, textStatus, jqXHR){
+          // alert(response);
+          $('#order_form').fadeOut();
+          $('#success_sent').fadeIn();
+        });
+
+        // Callback handler that will be called on failure
+        request.fail(function (jqXHR, textStatus, errorThrown){
+          // Log the error to the console
+          console.error(
+            "The following error occurred: "+
+            textStatus, errorThrown
+          );
+          $('#order_form').fadeOut();
+          $('#error_sent').fadeIn();
+        });
+
+        // Callback handler that will be called regardless
+        // if the request failed or succeeded
+        request.always(function () {
+          // Reenable the inputs
+          $inputs.prop("disabled", false);
+        });
+
+        // Prevent default posting of form
+        event.preventDefault();
       });
     });
   </script>

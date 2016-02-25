@@ -253,6 +253,9 @@ header.other_sec .phone {
 #price_section {
   background-image: url("../images/petrushka.jpg");
 }
+#price_section #order_form {
+  display: block;
+}
 #price_section .order_block {
   position: absolute;
   width: 70%;
@@ -266,6 +269,17 @@ header.other_sec .phone {
 #price_section .order_block h2 {
   color: white;
   text-align: center;
+}
+#price_section .order_block #success_sent, #price_section .order_block #error_sent {
+  display: none;
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 #price_section .order_table {
   width: 70%;
@@ -369,6 +383,7 @@ header.other_sec .phone {
   opacity: 0.3;
   width: 15%;
   position: absolute;
+  height: 200px;
 }
 #header_section .header_block h2 {
   color: #076031;

@@ -237,6 +237,9 @@ header {
 
 #price_section {
     background-image: url('../images/petrushka.jpg');
+    #order_form {
+        display: block;
+    }
     .order_block {
         position: absolute;
         width: 70%;
@@ -249,6 +252,17 @@ header {
         h2 {
             color: white;
             text-align: center;
+        }
+        #success_sent, #error_sent {
+            display: none;
+            position: absolute;
+            width: 70%;
+            height: 10%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
     }
     .order_table {
@@ -355,6 +369,7 @@ header {
         }
         width: 15%;
         position: absolute;
+        height: 200px;
         &.h_left {
             left: 15%;
         }
