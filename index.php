@@ -91,7 +91,7 @@
         <tr>
           <td>Лук севок</td>
           <td>10 руб/кг</td>
-          <td class="amount">5</td>
+          <td class="amount">В наличии</td>
           <td>500 кг</td>
           <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_1" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
@@ -101,7 +101,7 @@
          <tr>
           <td>Лук порей</td>
           <td>10 руб/кг</td>
-          <td class="amount">5</td>
+          <td class="amount">В наличии</td>
           <td>500 кг</td>
           <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_2" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
@@ -111,7 +111,7 @@
         <tr>
           <td>Шпинат</td>
           <td>10 руб/кг</td>
-          <td class="amount">5</td>
+          <td class="amount">В наличии</td>
           <td>500 кг</td>
           <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_3" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
@@ -121,7 +121,7 @@
         <tr>
           <td>Укроп</td>
           <td>10 руб/кг</td>
-          <td class="amount">5</td>
+          <td class="amount">В наличии</td>
           <td>500 кг</td>
           <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_4" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
@@ -131,7 +131,7 @@
         <tr>
           <td>Петрушка</td>
           <td>10 руб/кг</td>
-          <td class="amount">5</td>
+          <td class="amount">В наличии</td>
           <td>500 кг</td>
           <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_5" value="0"/></td>
           <td class="buttons"><div class="plus_btn">+</div></td>
@@ -350,12 +350,8 @@
     function toggle_header_style(index) {
       if (index === 1) {
         $('header.other_sec').css('display', 'none');
-        // $('header').addClass('first_sec');
-        // $('header').removeClass('other_sec');
       } else {
         $('header.other_sec').css('display', 'block');
-        // $('header').addClass('other_sec');
-        // $('header').removeClass('first_sec');
       }
     }
     function start_animation() {
@@ -383,31 +379,24 @@
   <script>
     $(document).ready(function(){
       $('.plus_btn').click(function(){
-        var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
         var $hidden = $total.siblings("input[type=hidden]");
-        if ($amount.html() > 0) {
-          $amount.html($amount.html() - 1);
-          $total.html(parseInt($total.html()) + 1);
-          $hidden.attr('value', $total.html());
-        }
+        $total.html(parseInt($total.html()) + 1);
+        $hidden.attr('value', $total.html());
+        // }
       });
       $('.minus_btn').click(function(){
-        var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
         var $hidden = $total.siblings("input[type=hidden]");
         if ($total.html() > 0) {
           $total.html($total.html() - 1);
-          $amount.html(parseInt($amount.html()) + 1);
-          $hidden.attr('value', $total.html());
         }
+        $hidden.attr('value', $total.html());
       });
       $('.clear_btn').click(function(){
-        var $amount = $(this).parent().siblings(".amount");
         var $total = $(this).parent().siblings(".total_btn").children(".total");
         var $hidden = $total.siblings("input[type=hidden]");
         $total.html(0);
-        $amount.html(5);
         $hidden.attr('value', 0);
       });
 
