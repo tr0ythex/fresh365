@@ -1,10 +1,13 @@
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   header.first_sec {
     min-width: 0;
     width: 90%;
   }
+  header.first_sec ul.main_menu {
+    min-width: 0;
+  }
   header.first_sec ul.main_menu li {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
   header.first_sec .phone {
     font-size: 2vw;
@@ -17,8 +20,12 @@
   header.other_sec {
     min-width: 0;
   }
+  header.other_sec ul.main_menu {
+    width: 55%;
+    min-width: 0;
+  }
   header.other_sec ul.main_menu li {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
   header.other_sec .phone {
     font-size: 2vw;

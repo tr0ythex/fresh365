@@ -5,7 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0">
   <title>Свежесть 365</title>
   <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" />
-  <link rel="stylesheet" href="stylesheets/styles-1100.css" type="text/css" />
+  <link rel="stylesheet" href="stylesheets/styles-1200.css" type="text/css" />
   <link rel="stylesheet" href="stylesheets/lib/onepage-scroll.css" type="text/css">
   <link rel="stylesheet" href="stylesheets/lib/magnific-popup.css" type="text/css">
 </head>
@@ -16,10 +16,10 @@
     
     <ul class="main_menu">
       <li><a class="a_about_section" href="#2">О компании</a></li>
-      <li><a class="a_price_section" href="#3">Цены</a></li>
-      <li><a class="a_header_section" href="#4">Заголовок</a></li>
-      <li><a class="a_novelty_section" href="#5">Новинки</a></li>
-      <li><a class="a_certificate_section" href="#6">Сертификаты</a></li>
+      <li><a class="a_price_section" href="#3">Наши преимущества</a></li>
+      <li><a class="a_header_section" href="#4">О продукции</a></li>
+      <li><a class="a_novelty_section" href="#5">Оформить заказ</a></li>
+      <li><a class="a_certificate_section" href="#6">Контакты</a></li>
     </ul>
     
     <div class="phone">8 (495) 966 41 51</div>
@@ -32,10 +32,10 @@
         
         <ul class="main_menu">
           <li><a class="a_about_section" href="#1">О компании</a></li>
-          <li><a class="a_price_section" href="#2">Цены</a></li>
-          <li><a class="a_header_section" href="#3">Заголовок</a></li>
-          <li><a class="a_novelty_section" href="#4">Новинки</a></li>
-          <li><a class="a_certificate_section" href="#5">Сертификаты</a></li>
+          <li><a class="a_price_section" href="#2">Наши преимущества</a></li>
+          <li><a class="a_header_section" href="#3">О продукции</a></li>
+          <li><a class="a_novelty_section" href="#4">Оформить заказ</a></li>
+          <li><a class="a_certificate_section" href="#5">Контакты</a></li>
         </ul>
         
         <div class="phone">8 (495) 966 41 51</div>

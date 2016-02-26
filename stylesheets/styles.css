@@ -82,7 +82,7 @@ header {
   left: 0;
   right: 0;
   margin: 0 auto;
-  min-width: 1100px;
+  min-width: 1200px;
 }
 header ul.main_menu {
   list-style: none;
@@ -113,20 +113,21 @@ header .logo {
 }
 header .phone {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 24px;
 }
 header.first_sec {
-  width: 50%;
+  width: 90%;
   position: absolute;
 }
 header.first_sec .logo {
   bottom: -15px;
-  left: 70px;
+  left: 50px;
   width: 109px;
   height: 109px;
 }
 header.first_sec ul.main_menu {
-  width: 55%;
+  width: 60%;
+  min-width: 780px;
   border-bottom: 2px solid white;
   padding: 80px 0 10px;
 }
@@ -155,7 +156,8 @@ header.other_sec .logo {
   margin: auto;
 }
 header.other_sec ul.main_menu {
-  width: 45%;
+  width: 55%;
+  min-width: 780px;
   border-bottom: none;
   padding: 0;
 }
@@ -169,7 +171,7 @@ header.other_sec .phone {
   color: #076031;
   top: 0;
   bottom: 0;
-  right: 5%;
+  right: 30px;
   margin: auto;
 }
 
