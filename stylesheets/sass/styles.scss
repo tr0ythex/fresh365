@@ -1,16 +1,15 @@
 @import 'utilities/variables';
 @import 'utilities/fonts';
 
+// common styles
 html, body {
     height: 100%;
 }
-
 body {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-
 input {
     background: none;
     border: none;
@@ -34,17 +33,10 @@ input {
         height: 50%;
     }
 }
-
-::-webkit-input-placeholder { color: white; }
-::-moz-placeholder          { color: white; }/* Firefox 19+ */
-:-moz-placeholder           { color: white; }/* Firefox 18- */
-:-ms-input-placeholder      { color: white; }
-
 body, button, input {
     font-family: bloggerSansLightFont;
     font-weight: 300;
 }
-
 section {
     height: 100vh;
     width: 70%;
@@ -54,11 +46,30 @@ section {
     background-repeat: no-repeat;
     position: relative;
 }
-
 .logo {
     position: absolute;
 }
+#freshmarket365_logo {
+    display: block;
+    width: 25%;
+    height: 25vw;
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0; bottom: 0; top: 0;
+    #circle_part {
+        width: 100%;
+        height: 100%;
+    }
+    #leaves_part {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        //width: 35%;
+        width: 0;
+    }
+}
 
+// header & footer
 header {
     z-index: 1;
     
@@ -159,7 +170,74 @@ header {
         }
     }
 }
+footer {
+    padding: 20px 40px 40px;
+    background-color: $footer_bg;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    .footer_menu {
+        float: left;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 14px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $footer_menu_text;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+    .line1 {
+        overflow: auto;
+        margin-bottom: 40px;
+        .email {
+            float: right;
+            margin-left: 20px;
+            color: $footer_menu_text;
+        }
+        .phone {
+            float: right;
+        }
+    }
+    .line2 {
+        overflow: auto;
+        .copyright {
+            float: left;
+        }
+        .address {
+            float: right;
+            width: 30%;
+            text-align: right;
+        }
+    }
+    .logo {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+        margin: auto;
+        height: 80%;
+    }
+}
 
+// placeholder styles
+::-webkit-input-placeholder { color: white; }
+::-moz-placeholder          { color: white; } /* Firefox 19+ */
+:-moz-placeholder           { color: white; } /* Firefox 18- */
+:-ms-input-placeholder      { color: white; }
+
+// section styles
 #head_section {
     background-image: url('../images/bg_image.jpg');
     
@@ -196,182 +274,56 @@ header {
         }
     }
 }
-
 #about_section {
     padding: 110px 15% 20px;
     box-sizing: border-box;
-    .about_section_block {
-        width: 45%;
-        .about_section_pic {
-            width: 50%;
-            margin: 0 auto;
-            display: block;
-        }
-        h2 {
-            color: $about_section_h2;
-            text-align: center;
-            font-size: 1.8vw;
-        }
-        p {
-            font-size: 1vw;
-        }
-        .vegetables_collection {
-            .vegetables_item {
-                display: inline-block;
-                width: 15%;
-                height: 30px;
-                background: url(../images/onion.png) no-repeat top left;
-                background-size: 30px 30px;
-                color: $vegetable_item;
-                font-size: 1vw;
-                padding-left: 30px;
-                padding-top: 8px;
-            }
-        }
-    }
-    .products {
-        float: left;
-    }
-    .company {
-        float: right;
-    }
-}
-
-#price_section {
-    background-image: url('../images/petrushka.jpg');
-    #order_form {
+    // .about_section_block {
+    //     width: 45%;
+    .about_section_pic {
+        width: 40%;
+        margin: 0 auto;
         display: block;
     }
-    .order_block {
-        position: absolute;
-        width: 70%;
-        height: 50%;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        h2 {
-            color: white;
-            text-align: center;
-        }
-        #success_sent, #error_sent {
-            display: none;
-            position: absolute;
-            width: 70%;
-            height: 10%;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-    }
-    .order_table {
-        width: 70%;
-        height: 100%;
-        min-height: 230px;
-        margin: 0 auto;
-        color: white;
+    h2 {
+        color: $about_section_h2;
         text-align: center;
-        border-collapse: collapse;
-        th {
-            background: rgba(255, 255, 255, 0.75);
-            color: $border_heading;
-            border: 1px solid white;
-        }
-        td {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid white;
-        }
-        .buttons {
-            width: 40px;
-            background: none;
-            border: none;
-            div {
-                display: inline-block;
-                width: 22px;
-                height: 22px;
-                background: rgba(255, 255, 255, 0.8);
-                border-radius: 50%;
-                line-height: 22px;
-                color: $order_num_bg;
-                box-shadow: 0 0 10px black;
-                &.plus_btn {
-                    cursor: pointer;
-                    color: white;
-                    background-color: $plus_btn_bg;
-                }
-                &.minus_btn {
-                    cursor: pointer;
-                    color: white;
-                    border: 1px solid $minus_btn_border;
-                    background-color: rgba(255, 255, 255, 0.3);
-                }
-                &.clear_btn {
-                    cursor: pointer;
-                    background: none;
-                    color: red;
-                    box-shadow: none;
-                    text-shadow: 0px 0px 10px black;
-                }
-                &.disable {
-                    background: rgba(88, 88, 88, 0.7);
-                    color: white;
-                }
-                &.disable.clear_btn {
-                    background: none;
-                    color: black;
-                }
-                &.disable.minus_btn {
-                    border: none;
-                }
-            }
-        }
-        .credentials {
-            height: 55px;
-        }
-        .order {
-            height: 90px;
-        }
-        .credentials, .order, .heading {
-            td, th {
-                border: none;
-                background: none;
-            }
-        }
+        font-size: 24px;
+        margin: 40px 0;
     }
+    p {
+        font-size: 18px;
+    }
+    // .vegetables_collection {
+    //     .vegetables_item {
+    //         display: inline-block;
+    //         width: 15%;
+    //         height: 30px;
+    //         background: url(../images/onion.png) no-repeat top left;
+    //         background-size: 30px 30px;
+    //         color: $vegetable_item;
+    //         font-size: 1vw;
+    //         padding-left: 30px;
+    //         padding-top: 8px;
+    //     }
+    // }
+    // }
+    // .products {
+    //     float: left;
+    // }
+    // .company {
+    //     float: right;
+    // }
 }
-#freshmarket365_logo {
-    display: block;
-    width: 25%;
-    height: 25vw;
-    margin: auto;
-    position: absolute;
-    left: 0; right: 0; bottom: 0; top: 0;
-    #circle_part {
-        width: 100%;
-        height: 100%;
-    }
-    #leaves_part {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        //width: 35%;
-        width: 0;
-    }
-}
-
-#header_section {
+#advantages_section {
     position: relative;
     .header_block {
         opacity: 0.3;
         h2 {
             color: $header_section_h2;
         }
-        width: 15%;
+        width: 200px;
+        height: 300px;
         position: absolute;
-        height: 200px;
         &.h_left {
             left: 15%;
         }
@@ -380,14 +332,151 @@ header {
         }
         &.h_bottom {
             bottom: 15%;
+            height: 200px;
         }
         &.h_right {
             right: 15%;
         }
     }
 }
-
-#novelty_section {
+#product_section {
+    // background-image: url('../images/petrushka.jpg');
+    // #order_form {
+    //     display: block;
+    // }
+    // .order_block {
+    //     position: absolute;
+    //     width: 70%;
+    //     height: 50%;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     margin: auto;
+    //     h2 {
+    //         color: white;
+    //         text-align: center;
+    //     }
+    //     #success_sent, #error_sent {
+    //         display: none;
+    //         position: absolute;
+    //         width: 70%;
+    //         height: 10%;
+    //         top: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         right: 0;
+    //         margin: auto;
+    //     }
+    // }
+    // .order_table {
+    //     width: 70%;
+    //     height: 100%;
+    //     min-height: 230px;
+    //     margin: 0 auto;
+    //     color: white;
+    //     text-align: center;
+    //     border-collapse: collapse;
+    //     th {
+    //         background: rgba(255, 255, 255, 0.75);
+    //         color: $border_heading;
+    //         border: 1px solid white;
+    //     }
+    //     td {
+    //         background: rgba(0, 0, 0, 0.3);
+    //         border: 1px solid white;
+    //     }
+    //     .buttons {
+    //         width: 40px;
+    //         background: none;
+    //         border: none;
+    //         div {
+    //             display: inline-block;
+    //             width: 22px;
+    //             height: 22px;
+    //             background: rgba(255, 255, 255, 0.8);
+    //             border-radius: 50%;
+    //             line-height: 22px;
+    //             color: $order_num_bg;
+    //             box-shadow: 0 0 10px black;
+    //             &.plus_btn {
+    //                 cursor: pointer;
+    //                 color: white;
+    //                 background-color: $plus_btn_bg;
+    //             }
+    //             &.minus_btn {
+    //                 cursor: pointer;
+    //                 color: white;
+    //                 border: 1px solid $minus_btn_border;
+    //                 background-color: rgba(255, 255, 255, 0.3);
+    //             }
+    //             &.clear_btn {
+    //                 cursor: pointer;
+    //                 background: none;
+    //                 color: red;
+    //                 box-shadow: none;
+    //                 text-shadow: 0px 0px 10px black;
+    //             }
+    //             &.disable {
+    //                 background: rgba(88, 88, 88, 0.7);
+    //                 color: white;
+    //             }
+    //             &.disable.clear_btn {
+    //                 background: none;
+    //                 color: black;
+    //             }
+    //             &.disable.minus_btn {
+    //                 border: none;
+    //             }
+    //         }
+    //     }
+    //     .credentials {
+    //         height: 55px;
+    //     }
+    //     .order {
+    //         height: 90px;
+    //     }
+    //     .credentials, .order, .heading {
+    //         td, th {
+    //             border: none;
+    //             background: none;
+    //         }
+    //     }
+    // }
+    padding: 110px 15% 20px;
+    box-sizing: border-box;
+    text-align: center;
+    .about_section_pic {
+        width: 38%;
+        margin: 0 auto;
+        display: block;
+    }
+    h2 {
+        color: $about_section_h2;
+        text-align: center;
+        font-size: 24px;
+        margin: 40px 0;
+    }
+    p {
+        font-size: 18px;
+    }
+    .vegetables_collection {
+        margin-top: 50px;
+        min-width: 760px;
+        .vegetables_item {
+            display: inline-block;
+            width: 15%;
+            height: 30px;
+            background: url(../images/onion.png) no-repeat top left;
+            background-size: 30px 30px;
+            color: $vegetable_item;
+            font-size: 1vw;
+            padding-left: 30px;
+            padding-top: 8px;
+        }
+    }
+}
+#order_section {
     padding-top: 80px;
     .heading {
         width: 100%;
@@ -424,8 +513,7 @@ header {
         }
     }
 }
-
-#certificate_section {
+#contacts_section {
     padding: 80px 0;
     box-sizing: border-box;
     .heading {
@@ -466,62 +554,5 @@ header {
     }
     .content {
         padding: 0 15%;
-    }
-}
-
-footer {
-    padding: 20px 40px 40px;
-    background-color: $footer_bg;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-    .footer_menu {
-        float: left;
-        margin: 0;
-        padding: 0;
-        li {
-            display: inline-block;
-            margin-right: 20px;
-            &:last-of-type {
-                margin-right: 0;
-            }
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $footer_menu_text;
-            }
-        }
-    }
-    .line1 {
-        overflow: auto;
-        margin-bottom: 40px;
-        .email {
-            float: right;
-            margin-left: 20px;
-            color: $footer_menu_text;
-        }
-        .phone {
-            float: right;
-        }
-    }
-    .line2 {
-        overflow: auto;
-        .copyright {
-            float: left;
-        }
-        .address {
-            float: right;
-            width: 30%;
-            text-align: right;
-        }
-    }
-    .logo {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        height: 80%;
     }
 }

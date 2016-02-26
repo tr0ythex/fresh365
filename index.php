@@ -16,10 +16,10 @@
     
     <ul class="main_menu">
       <li><a class="a_about_section" href="#2">О компании</a></li>
-      <li><a class="a_price_section" href="#3">Наши преимущества</a></li>
-      <li><a class="a_header_section" href="#4">О продукции</a></li>
-      <li><a class="a_novelty_section" href="#5">Оформить заказ</a></li>
-      <li><a class="a_certificate_section" href="#6">Контакты</a></li>
+      <li><a class="a_advantages_section" href="#3">Наши преимущества</a></li>
+      <li><a class="a_product_section" href="#4">О продукции</a></li>
+      <li><a class="a_order_section" href="#5">Оформить заказ</a></li>
+      <li><a class="a_contacts_section" href="#6">Контакты</a></li>
     </ul>
     
     <div class="phone">8 (495) 966 41 51</div>
@@ -32,10 +32,10 @@
         
         <ul class="main_menu">
           <li><a class="a_about_section" href="#1">О компании</a></li>
-          <li><a class="a_price_section" href="#2">Наши преимущества</a></li>
-          <li><a class="a_header_section" href="#3">О продукции</a></li>
-          <li><a class="a_novelty_section" href="#4">Оформить заказ</a></li>
-          <li><a class="a_certificate_section" href="#5">Контакты</a></li>
+          <li><a class="a_advantages_section" href="#2">Наши преимущества</a></li>
+          <li><a class="a_product_section" href="#3">О продукции</a></li>
+          <li><a class="a_order_section" href="#4">Оформить заказ</a></li>
+          <li><a class="a_contacts_section" href="#5">Контакты</a></li>
         </ul>
         
         <div class="phone">8 (495) 966 41 51</div>
@@ -47,135 +47,171 @@
       </div>
     </section>
     <section id="about_section">
-    <div class="about_section_block products">
-      <img class="about_section_pic" src="images/trava_1.png">
-      <h2>О продукции</h2>
-      <p>Русское фермерское хозяйство «Свежесть 365» 
-        на производстве и продаже свежей зелени и овощей.</p>
-      <p>Мы выращиваем на собственных плодородных землях в Тульской области. </p>
-      <div class="vegetables_collection">
-        <div class="vegetables_item">Лук севок</div>
-        <div class="vegetables_item">Укроп</div>
-        <div class="vegetables_item">Кинза</div>
-        <div class="vegetables_item">Шпинат</div>
-        <div class="vegetables_item">Петрушка</div>
-        <div class="vegetables_item">Лук порей</div>
-        <div class="vegetables_item">Чеснок</div>
-        <div class="vegetables_item">Щавель</div>
-      </div>
-    </div>
-    <div class="about_section_block company">
+    <!--<div class="about_section_block products">-->
+    <!--  <img class="about_section_pic" src="images/trava_1.png">-->
+    <!--  <h2>О продукции</h2>-->
+    <!--  <p>Русское фермерское хозяйство «Свежесть 365» -->
+    <!--    на производстве и продаже свежей зелени и овощей.</p>-->
+    <!--  <p>Мы выращиваем на собственных плодородных землях в Тульской области. </p>-->
+    <!--  <div class="vegetables_collection">-->
+    <!--    <div class="vegetables_item">Лук севок</div>-->
+    <!--    <div class="vegetables_item">Укроп</div>-->
+    <!--    <div class="vegetables_item">Кинза</div>-->
+    <!--    <div class="vegetables_item">Шпинат</div>-->
+    <!--    <div class="vegetables_item">Петрушка</div>-->
+    <!--    <div class="vegetables_item">Лук порей</div>-->
+    <!--    <div class="vegetables_item">Чеснок</div>-->
+    <!--    <div class="vegetables_item">Щавель</div>-->
+    <!--  </div>-->
+    <!--</div>-->
+    <!--<div class="about_section_block company">-->
       <img class="about_section_pic" src="images/logo_2.png">
       <h2>О компании</h2>
-      <p>Из 200 га полей, 5 га занимают промышленный теплицы, оснащенные современной системой отопления и полива.</p>
-      <p>Сочетание высоких технологий и лучших традиций земледелия, обеспечивает максимальный урожай, 
-      а собственный склад с необходимым температурным режимом, гарантирует долгую свежесть нашей продукции.</p>
-    </div>
-  </section>
-    <section id="price_section">
-    <div class="order_block">
-      <h2 id="success_sent">Заказ успешно отправлен. Мы свяжемся с вами в ближайшее время</h2>
-      <h2 id="error_sent">Произошла ошибка при отправке заказа. Пожалуйста, перезагрузите страницу и попробуйте позже</h2>
-      <form id="order_form" action="index.php" method="post">
-      <table class="order_table">
-        <tr class="heading">
-          <th colspan="4"><h2>Закажите сейчас!</h2></th>
-        </tr>
-        <tr>
-          <th>Наименование</th>
-          <th>Цена</th>
-          <th>Наличие</th>
-          <th>Фасовка</th>
-          <th colspan="4" class="buttons"></th>
-        </tr>
-        <tr>
-          <td>Лук севок</td>
-          <td>10 руб/кг</td>
-          <td class="amount">В наличии</td>
-          <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_1" value="0"/></td>
-          <td class="buttons"><div class="plus_btn">+</div></td>
-          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
-        </tr>
-         <tr>
-          <td>Лук порей</td>
-          <td>10 руб/кг</td>
-          <td class="amount">В наличии</td>
-          <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_2" value="0"/></td>
-          <td class="buttons"><div class="plus_btn">+</div></td>
-          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
-        </tr>
-        <tr>
-          <td>Шпинат</td>
-          <td>10 руб/кг</td>
-          <td class="amount">В наличии</td>
-          <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_3" value="0"/></td>
-          <td class="buttons"><div class="plus_btn">+</div></td>
-          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
-        </tr>
-        <tr>
-          <td>Укроп</td>
-          <td>10 руб/кг</td>
-          <td class="amount">В наличии</td>
-          <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_4" value="0"/></td>
-          <td class="buttons"><div class="plus_btn">+</div></td>
-          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
-        </tr>
-        <tr>
-          <td>Петрушка</td>
-          <td>10 руб/кг</td>
-          <td class="amount">В наличии</td>
-          <td>500 кг</td>
-          <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_5" value="0"/></td>
-          <td class="buttons"><div class="plus_btn">+</div></td>
-          <td class="buttons"><div class="minus_btn">&#8722;</div></td>
-          <td class="buttons"><div class="clear_btn">&#10006;</div></td>
-        </tr>
-        <tr class="credentials">
-          <td colspan="2"><input type="text" name="full_name" id="full_name" placeholder="ФИО" required/></td>
-          <td colspan="2"><input type="email" name="email" id="email" placeholder="E-mail" required/></td>
-          <td colspan="4"></td>
-        </tr>
-        <tr class="order">
-          <td colspan="4"><input type="submit" name="submit" id="order_form_submit" value="Заказать"/></td>
-          <td colspan="4"></td>
-        </tr>
-
-      </table>
-      </form>
-    </div>
-  </section>
-    <section id="header_section">
+      <p>Свежие овощи и зелень от компании Свежесть — 365 – радуга вкуса и свежести для потребителей России!</p>
+      <p>Для российских потребителей, на протяжении всего календарного года мы предлагаем Вам овощи 
+      и зелень собственного производства!</p>
+      <p>Уделив всего 5 минут своего времени, Вы можете ознакомиться с нашим широким ассортиментом, 
+      а так же узнать о преимуществах сотрудничества с компанией «Свежесть» — 365.</p>
+      <p>Мы выращиваем нашу продукцию на собственных плодородных землях площадью 200 га 
+      и предлагаем широкий ассортимент собственного производства мелким и крупным оптом по приемлемым ценам. 
+      Вся продукция сертифицирована, имеет высокий стандарт качества и полное соответствие экологическим 
+      и санитарно-эпидемиологическим нормам, принятым в Российской Федерации. 
+      Гарантию полной сохранности товарного вида и вкусовых качеств продукции обеспечивают складские помещения, 
+      оснащенные специальным холодильным и вентиляционным оборудованием, 
+      с обеспечением правильного температурного режима, соблюдением санитарных норм и правил.</p>
+    <!--</div>-->
+    </section>
+    <section id="advantages_section">
       <div id="freshmarket365_logo">
         <img id="circle_part" src="images/freshmarket365_logo.svg">
         <img id="leaves_part" src="images/logo_part.svg">
       </div>
       <div class="header_block h_left h_top">
-        <h2>Заголовок</h2>
-        <p>Обработкой заказов занимается главный офис, расположенный в Москве</p>
+        <h2>Качество и документация</h2>
+        <p>Овощи и зелень соответствуют самым строгим требованиям экологической безопасности, 
+        что регулярно подтверждается сертификатами качества. 
+        По Вашему запросу готовы предоставить всю необходимую документацию.</p>
       </div>
       <div class="header_block h_right h_top">
-        <h2>Заголовок</h2>
-        <p>Вся продукция хранится на складе с необходимым температурным режимом в 5 километрах от Москвы.</p>
+        <h2>Профессионализм</h2>
+        <p>МЫ-КОМАНДА ПРОФЕССИОНАЛОВ! Обработкой заказов занимается главный офис, расположенный в Москве. 
+        Специалисты нашей компании всегда готовы оказать профессиональную консультацию, 
+        оформить заказ и проконтролировать качественное исполнение.</p>
       </div>
       <div class="header_block h_right h_bottom">
-        <h2>Заголовок</h2>
-        <p>Каждое утро наши водители развозят свежую зелень и овощи клиентам компании</p>
+        <h2>Оперативность</h2>
+        <p>Предлагаем быструю и бесплатную доставку по Москве и М.О.
+          Ежедневные оптовые поставки. Развитая логистическая система.
+        </p>
       </div>
       <div class="header_block h_left h_bottom">
-        <h2>Заголовок</h2>
-        <p>Овощи и зелень соответствуют самым строгим требованиям экологической безопасности, 
-        что регулярно подтверждается сертификатами качества.</p>
+        <h2>Конкурентные цены</h2>
+        <p>Наша компания предлагает Вам продукцию по самым выгодным и конкурентным ценам по Безналичной оплате с НДС.</p>
       </div>
     </section>
-    <section id="novelty_section">
+    <section id="product_section">
+      <img class="about_section_pic" src="images/trava_1.png">
+      <h2>О продукции</h2>
+      <p>Основным направлением нашей компании является выращивание овощей и зелени.</p>
+      <p>Ассортимент производимой нами продукции включает в себя такие позиции как:</p>
+      <div class="vegetables_collection">
+        <div class="vegetables_item">Лук зеленый</div>
+        <div class="vegetables_item">Укроп</div>
+        <div class="vegetables_item">Петрушка</div>
+        <div class="vegetables_item">Кинза</div>
+        <div class="vegetables_item">Щавель</div>
+        <div class="vegetables_item">Шпинат</div>
+        <div class="vegetables_item">Базилик</div>
+        <div class="vegetables_item">Огурцы</div>
+        <div class="vegetables_item">Помидоры</div>
+        <div class="vegetables_item">Кукуруза пищевая</div>
+        <div class="vegetables_item">Капуста белокочанная</div>
+        <div class="vegetables_item">Капуста пекинская</div>
+        <div class="vegetables_item">Редис</div>
+        <div class="vegetables_item">Картофель</div>
+        <div class="vegetables_item">Морковь</div>
+        <div class="vegetables_item">Салатная группа (Айсберг, руккола, романо, лолло россо и т.д.)</div>
+      </div>
+    <!--<div class="order_block">-->
+    <!--  <h2 id="success_sent">Заказ успешно отправлен. Мы свяжемся с вами в ближайшее время</h2>-->
+    <!--  <h2 id="error_sent">Произошла ошибка при отправке заказа. Пожалуйста, перезагрузите страницу и попробуйте позже</h2>-->
+    <!--  <form id="order_form" action="index.php" method="post">-->
+    <!--  <table class="order_table">-->
+    <!--    <tr class="heading">-->
+    <!--      <th colspan="4"><h2>Закажите сейчас!</h2></th>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--      <th>Наименование</th>-->
+    <!--      <th>Цена</th>-->
+    <!--      <th>Наличие</th>-->
+    <!--      <th>Фасовка</th>-->
+    <!--      <th colspan="4" class="buttons"></th>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--      <td>Лук севок</td>-->
+    <!--      <td>10 руб/кг</td>-->
+    <!--      <td class="amount">В наличии</td>-->
+    <!--      <td>500 кг</td>-->
+    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_1" value="0"/></td>-->
+    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
+    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
+    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
+    <!--    </tr>-->
+    <!--     <tr>-->
+    <!--      <td>Лук порей</td>-->
+    <!--      <td>10 руб/кг</td>-->
+    <!--      <td class="amount">В наличии</td>-->
+    <!--      <td>500 кг</td>-->
+    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_2" value="0"/></td>-->
+    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
+    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
+    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--      <td>Шпинат</td>-->
+    <!--      <td>10 руб/кг</td>-->
+    <!--      <td class="amount">В наличии</td>-->
+    <!--      <td>500 кг</td>-->
+    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_3" value="0"/></td>-->
+    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
+    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
+    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--      <td>Укроп</td>-->
+    <!--      <td>10 руб/кг</td>-->
+    <!--      <td class="amount">В наличии</td>-->
+    <!--      <td>500 кг</td>-->
+    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_4" value="0"/></td>-->
+    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
+    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
+    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--      <td>Петрушка</td>-->
+    <!--      <td>10 руб/кг</td>-->
+    <!--      <td class="amount">В наличии</td>-->
+    <!--      <td>500 кг</td>-->
+    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_5" value="0"/></td>-->
+    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
+    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
+    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
+    <!--    </tr>-->
+    <!--    <tr class="credentials">-->
+    <!--      <td colspan="2"><input type="text" name="full_name" id="full_name" placeholder="ФИО" required/></td>-->
+    <!--      <td colspan="2"><input type="email" name="email" id="email" placeholder="E-mail" required/></td>-->
+    <!--      <td colspan="4"></td>-->
+    <!--    </tr>-->
+    <!--    <tr class="order">-->
+    <!--      <td colspan="4"><input type="submit" name="submit" id="order_form_submit" value="Заказать"/></td>-->
+    <!--      <td colspan="4"></td>-->
+    <!--    </tr>-->
+
+    <!--  </table>-->
+    <!--  </form>-->
+    <!--</div>-->
+    </section>
+    <section id="order_section">
       <div class="heading">
         <h1>Новинки</h1>
       </div>
@@ -209,7 +245,7 @@
         </div>
       </div>
     </section>
-    <section id="certificate_section">
+    <section id="contacts_section">
       <div class="heading">
         <h1>Сертификаты</h1>
       </div>
@@ -264,20 +300,19 @@
       <footer>
           <div class="line1">
             <ul class="footer_menu">
-              <li><a class="a_about_section" href="#1">О компании</a></li>
-              <li><a class="a_price_section" href="#2">Цены</a></li>
-              <li><a class="a_header_section" href="#3">Заголовок</a></li>
-              <li><a class="a_novelty_section" href="#4">Новинки</a></li>
+              <li><a class="a_about_section" href="#2">О компании</a></li>
+              <li><a class="a_advantages_section" href="#3">Наши преимущества</a></li>
+              <li><a class="a_product_section" href="#4">Заголовок</a></li>
+              <li><a class="a_order_section" href="#5">Оформить заказ</a></li>
             </ul>
-            <div class="email">fresh-365@yandex.ru</div>
+            <div class="email">info@freshmarket365.ru</div>
             <div class="phone">8 (495) 966-41-51</div>
           </div>
           <div class="line2">
-            <div class="copyright">© 2013-2015 «Свежесть – 365» Все права защищены</div>
+            <div class="copyright">© 2013-2016 «Свежесть – 365» Все права защищены</div>
             <!-- &#8209; is a non-breaking hyphen -->
-            <div class="address">Москва, п.Сосенское, Калужское&nbsp;шоссе, 22&#8209;й&nbsp;км, 
-            здание&nbsp;№10, ОПЦ&nbsp;«ФудСити»</div>
-            <img class="logo" src="<?php echo THEME_IMG_PATH ?>/freshmarket365_logo.png">
+            <div class="address">г. Москва, Хлебозаводский проезд, д. 7, стр.9</div>
+            <img class="logo" src="images/freshmarket365_logo.png">
           </div>
       </footer>
     </section>
@@ -291,7 +326,7 @@
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
         afterMove: function(index) {
-          if (index === 4) {
+          if (index === 3) {
             if( $('#leaves_part').is(':animated') || $('.header_block').is(':animated')) {
               // reset();
               // start_animation();
@@ -315,16 +350,16 @@
       $('.a_about_section').click(function(){
         $('.main').moveTo(2);
       });
-      $('.a_price_section').click(function(){
+      $('.a_advantages_section').click(function(){
         $('.main').moveTo(3);
       });
-      $('.a_header_section').click(function(){
+      $('.a_product_section').click(function(){
         $('.main').moveTo(4);
       });
-      $('.a_novelty_section').click(function(){
+      $('.a_order_section').click(function(){
         $('.main').moveTo(5);
       });
-      $('.a_certificate_section').click(function(){
+      $('.a_contacts_section').click(function(){
         $('.main').moveTo(6);
       });
       
@@ -332,7 +367,7 @@
           $('.main').moveTo(2);
       });
       $('.order').click(function() {
-          $('.main').moveTo(3);
+          $('.main').moveTo(5);
       });
       
       $('.certificate').magnificPopup({type:'image'});
