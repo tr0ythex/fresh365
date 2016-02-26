@@ -47,24 +47,6 @@
       </div>
     </section>
     <section id="about_section">
-    <!--<div class="about_section_block products">-->
-    <!--  <img class="about_section_pic" src="images/trava_1.png">-->
-    <!--  <h2>О продукции</h2>-->
-    <!--  <p>Русское фермерское хозяйство «Свежесть 365» -->
-    <!--    на производстве и продаже свежей зелени и овощей.</p>-->
-    <!--  <p>Мы выращиваем на собственных плодородных землях в Тульской области. </p>-->
-    <!--  <div class="vegetables_collection">-->
-    <!--    <div class="vegetables_item">Лук севок</div>-->
-    <!--    <div class="vegetables_item">Укроп</div>-->
-    <!--    <div class="vegetables_item">Кинза</div>-->
-    <!--    <div class="vegetables_item">Шпинат</div>-->
-    <!--    <div class="vegetables_item">Петрушка</div>-->
-    <!--    <div class="vegetables_item">Лук порей</div>-->
-    <!--    <div class="vegetables_item">Чеснок</div>-->
-    <!--    <div class="vegetables_item">Щавель</div>-->
-    <!--  </div>-->
-    <!--</div>-->
-    <!--<div class="about_section_block company">-->
       <img class="about_section_pic" src="images/logo_2.png">
       <h2>О компании</h2>
       <p>Свежие овощи и зелень от компании Свежесть — 365 – радуга вкуса и свежести для потребителей России!</p>
@@ -79,7 +61,6 @@
       Гарантию полной сохранности товарного вида и вкусовых качеств продукции обеспечивают складские помещения, 
       оснащенные специальным холодильным и вентиляционным оборудованием, 
       с обеспечением правильного температурного режима, соблюдением санитарных норм и правил.</p>
-    <!--</div>-->
     </section>
     <section id="advantages_section">
       <div id="freshmarket365_logo">
@@ -132,171 +113,82 @@
         <div class="vegetables_item">Морковь</div>
         <div class="vegetables_item">Салатная группа (Айсберг, руккола, романо, лолло россо и т.д.)</div>
       </div>
-    <!--<div class="order_block">-->
-    <!--  <h2 id="success_sent">Заказ успешно отправлен. Мы свяжемся с вами в ближайшее время</h2>-->
-    <!--  <h2 id="error_sent">Произошла ошибка при отправке заказа. Пожалуйста, перезагрузите страницу и попробуйте позже</h2>-->
-    <!--  <form id="order_form" action="index.php" method="post">-->
-    <!--  <table class="order_table">-->
-    <!--    <tr class="heading">-->
-    <!--      <th colspan="4"><h2>Закажите сейчас!</h2></th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--      <th>Наименование</th>-->
-    <!--      <th>Цена</th>-->
-    <!--      <th>Наличие</th>-->
-    <!--      <th>Фасовка</th>-->
-    <!--      <th colspan="4" class="buttons"></th>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--      <td>Лук севок</td>-->
-    <!--      <td>10 руб/кг</td>-->
-    <!--      <td class="amount">В наличии</td>-->
-    <!--      <td>500 кг</td>-->
-    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_1" value="0"/></td>-->
-    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
-    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
-    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
-    <!--    </tr>-->
-    <!--     <tr>-->
-    <!--      <td>Лук порей</td>-->
-    <!--      <td>10 руб/кг</td>-->
-    <!--      <td class="amount">В наличии</td>-->
-    <!--      <td>500 кг</td>-->
-    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_2" value="0"/></td>-->
-    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
-    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
-    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--      <td>Шпинат</td>-->
-    <!--      <td>10 руб/кг</td>-->
-    <!--      <td class="amount">В наличии</td>-->
-    <!--      <td>500 кг</td>-->
-    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_3" value="0"/></td>-->
-    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
-    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
-    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--      <td>Укроп</td>-->
-    <!--      <td>10 руб/кг</td>-->
-    <!--      <td class="amount">В наличии</td>-->
-    <!--      <td>500 кг</td>-->
-    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_4" value="0"/></td>-->
-    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
-    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
-    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
-    <!--    </tr>-->
-    <!--    <tr>-->
-    <!--      <td>Петрушка</td>-->
-    <!--      <td>10 руб/кг</td>-->
-    <!--      <td class="amount">В наличии</td>-->
-    <!--      <td>500 кг</td>-->
-    <!--      <td class="buttons total_btn"><div class="total">0</div><input type="hidden" name="prod_5" value="0"/></td>-->
-    <!--      <td class="buttons"><div class="plus_btn">+</div></td>-->
-    <!--      <td class="buttons"><div class="minus_btn">&#8722;</div></td>-->
-    <!--      <td class="buttons"><div class="clear_btn">&#10006;</div></td>-->
-    <!--    </tr>-->
-    <!--    <tr class="credentials">-->
-    <!--      <td colspan="2"><input type="text" name="full_name" id="full_name" placeholder="ФИО" required/></td>-->
-    <!--      <td colspan="2"><input type="email" name="email" id="email" placeholder="E-mail" required/></td>-->
-    <!--      <td colspan="4"></td>-->
-    <!--    </tr>-->
-    <!--    <tr class="order">-->
-    <!--      <td colspan="4"><input type="submit" name="submit" id="order_form_submit" value="Заказать"/></td>-->
-    <!--      <td colspan="4"></td>-->
-    <!--    </tr>-->
-
-    <!--  </table>-->
-    <!--  </form>-->
-    <!--</div>-->
     </section>
     <section id="order_section">
       <div class="heading">
-        <h1>Новинки</h1>
+        <h1>Оформить заказ</h1>
       </div>
-      <div class="content">
-        <div class="item">
-          <img src="images/water_drop.png">
-          <h2>Новый продукт</h2>
-          <p>
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-          </p>
-        </div>
-        <div class="item">
-          <img src="images/water_drop.png">
-          <h2>Новый продукт</h2>
-          <p>
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-          </p>
-        </div>
-        <div class="item">
-          <img src="images/water_drop.png">
-          <h2>Новый продукт</h2>
-          <p>
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-            У нас появился в ассортименте новый вид кинзы. 
-          </p>
-        </div>
-      </div>
+      <p>Для оформления заказа Вы можете связаться с нами по тел.:</p>
+      <p>
+        <p class="tel"><strong>+7 (495) 966-41-51</strong></p>
+        <p class="tel"><strong>+7 (929) 936-78-68</strong></p>
+        <p class="tel"><strong>+7 (929) 936-78-73</strong></p>
+      </p>
+      <p>Или связаться с нами по электронной почте <a href="mailto:info@freshmarket365.ru">info@freshmarket365.ru</a></p>
+      <p>Наши специалисты всегда готовы ответить на интересующие Вас вопросы.</p>
+      <p>По всем вопросам сотрудничества, просим присылать Ваши предложения</p>
+      <p>на нашу электронную почту <a href="mailto:info@freshmarket365.ru">info@freshmarket365.ru</a></p>
     </section>
     <section id="contacts_section">
       <div class="heading">
-        <h1>Сертификаты</h1>
+        <h1>Контакты</h1>
       </div>
-      <div class="certificates">
-        <a class="certificate" href="images/certificates/cer-1.jpg">
-          <img id="cer-1" src="images/certificates/cer-1.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-2.jpg">
-          <img id="cer-1" src="images/certificates/cer-2.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-3.jpg">
-          <img id="cer-1" src="images/certificates/cer-3.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-4.jpg">
-          <img id="cer-1" src="images/certificates/cer-4.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-5.jpg">
-          <img id="cer-1" src="images/certificates/cer-5.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-6.jpg">
-          <img id="cer-1" src="images/certificates/cer-6.jpg">
-        </a>
-        <a class="certificate" href="images/certificates/cer-7.jpg">
-          <img id="cer-1" src="images/certificates/cer-7.jpg">
-        </a>
-      </div>
-      <div class="content">
-        <p>
-          Свежие овощи и зелень от компании Свежесть — 365 – 
-          радуга вкуса и свежести  для потребителей России!
-        </p> 
-        <p>
-          Для российских потребителей, на протяжении всего календарного года 
-          мы предлагаем Вам овощи и зелень собственного производства!
-        </p>
-        <p>
-          Потратив всего 5 минут своего времени, Вы можете ознакомиться 
-          с нашим широким ассортиментом, а так же узнать 
-          о преимуществах сотрудничества с компанией «Свежесть» — 365.
-        </p>
-        <p>
-          Мы предлагаем широкий ассортимент продукции собственного производства мелким и 
-          крупным оптом по приемлемым ценам. Вся продукция сертифицирована, имеет высокий 
-          стандарт качества и полное соответствие экологическим и 
-          санитарно-эпидемиологическим нормам, принятым в Российской Федерации. 
-          Гарантию полной сохранности товарного вида и вкусовых качеств продукции 
-          обеспечивают складские помещения, оснащенные специальным холодильным и 
-          вентиляционным оборудованием, с обеспечением правильного температурного 
-          режима, соблюдением санитарных норм и правил.
-        </p>
-      </div>
+      <p><strong>Адрес офиса:</strong></p>
+      <p>г. Москва, Хлебозаводский проезд, д. 7, стр.9</p>
+      <p><strong>Адрес склада:</strong></p>
+      <p>М.О. Деревня Горки, Ленинский район</p>
+      <p><strong>Телефон:</strong></p>
+      <p class="tel">+7 (495) 966-41-51, +7 (929) 936-78-68, +7 (929) 936-78-73</p>
+      <p><strong>Почта:</strong></p>
+      <p><a href="mailto:info@freshmarket365.ru">info@freshmarket365.ru</a></p>
+      <!--<div class="certificates">-->
+      <!--  <a class="certificate" href="images/certificates/cer-1.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-1.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-2.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-2.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-3.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-3.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-4.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-4.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-5.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-5.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-6.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-6.jpg">-->
+      <!--  </a>-->
+      <!--  <a class="certificate" href="images/certificates/cer-7.jpg">-->
+      <!--    <img id="cer-1" src="images/certificates/cer-7.jpg">-->
+      <!--  </a>-->
+      <!--</div>-->
+      <!--<div class="content">-->
+      <!--  <p>-->
+      <!--    Свежие овощи и зелень от компании Свежесть — 365 – -->
+      <!--    радуга вкуса и свежести  для потребителей России!-->
+      <!--  </p> -->
+      <!--  <p>-->
+      <!--    Для российских потребителей, на протяжении всего календарного года -->
+      <!--    мы предлагаем Вам овощи и зелень собственного производства!-->
+      <!--  </p>-->
+      <!--  <p>-->
+      <!--    Потратив всего 5 минут своего времени, Вы можете ознакомиться -->
+      <!--    с нашим широким ассортиментом, а так же узнать -->
+      <!--    о преимуществах сотрудничества с компанией «Свежесть» — 365.-->
+      <!--  </p>-->
+      <!--  <p>-->
+      <!--    Мы предлагаем широкий ассортимент продукции собственного производства мелким и -->
+      <!--    крупным оптом по приемлемым ценам. Вся продукция сертифицирована, имеет высокий -->
+      <!--    стандарт качества и полное соответствие экологическим и -->
+      <!--    санитарно-эпидемиологическим нормам, принятым в Российской Федерации. -->
+      <!--    Гарантию полной сохранности товарного вида и вкусовых качеств продукции -->
+      <!--    обеспечивают складские помещения, оснащенные специальным холодильным и -->
+      <!--    вентиляционным оборудованием, с обеспечением правильного температурного -->
+      <!--    режима, соблюдением санитарных норм и правил.-->
+      <!--  </p>-->
+      <!--</div>-->
       <footer>
           <div class="line1">
             <ul class="footer_menu">
@@ -312,7 +204,7 @@
             <div class="copyright">© 2013-2016 «Свежесть – 365» Все права защищены</div>
             <!-- &#8209; is a non-breaking hyphen -->
             <div class="address">г. Москва, Хлебозаводский проезд, д. 7, стр.9</div>
-            <img class="logo" src="images/freshmarket365_logo.png">
+            <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
           </div>
       </footer>
     </section>

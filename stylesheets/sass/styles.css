@@ -1,0 +1,64 @@
+/*
+Error: Invalid CSS after "...   color: class": expected ";", was "="tel";"
+        on line 485 of /home/ubuntu/workspace/stylesheets/sass/styles.scss
+
+480:         text-align: center;
+481:         &:nth-of-type(8) {
+482:             margin-top: 50px;
+483:         }
+484:         &.tel {
+485:             color: class="tel";
+486:         }
+487:     }
+488: }
+489: #contacts_section {
+490:     padding: 80px 0;
+
+Backtrace:
+/home/ubuntu/workspace/stylesheets/sass/styles.scss:485
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:757:in `block in try_declaration'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `call'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `rethrow'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:762:in `try_declaration'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:692:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:646:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.2.1/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.2.1/bin/scss:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...   color: class\": expected \";\", was \"=\"tel\";\"\A         on line 485 of /home/ubuntu/workspace/stylesheets/sass/styles.scss\A \A 480:         text-align: center;\A 481:         &:nth-of-type(8) {\A 482:             margin-top: 50px;\A 483:         }\A 484:         &.tel {\A 485:             color: class=\"tel\";\A 486:         }\A 487:     }\A 488: }\A 489: #contacts_section {\A 490:     padding: 80px 0;"; }

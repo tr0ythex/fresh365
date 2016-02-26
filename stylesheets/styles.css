@@ -302,7 +302,7 @@ footer .logo {
   box-sizing: border-box;
 }
 #about_section .about_section_pic {
-  width: 40%;
+  width: 38%;
   margin: 0 auto;
   display: block;
 }
@@ -314,6 +314,7 @@ footer .logo {
 }
 #about_section p {
   font-size: 18px;
+  text-align: center;
 }
 
 #advantages_section {
@@ -386,6 +387,7 @@ footer .logo {
   background-color: #9cc419;
   text-align: center;
   line-height: 100px;
+  margin-bottom: 50px;
 }
 #order_section .heading h1 {
   margin: 0;
@@ -393,26 +395,20 @@ footer .logo {
   color: white;
   font-size: 2em;
 }
-#order_section .content {
-  padding: 50px;
-  text-align: justify;
+#order_section a {
+  text-decoration: none;
+  color: #9cc419;
+  font-weight: bold;
 }
-#order_section .content:after {
-  content: "";
-  width: 100%;
-  display: inline-block;
-}
-#order_section .content .item {
-  display: inline-block;
-  width: 27.5%;
+#order_section p {
+  font-size: 22px;
   text-align: center;
 }
-#order_section .content .item img {
-  width: 70%;
+#order_section p:nth-of-type(8) {
+  margin-top: 50px;
 }
-#order_section .content .item h2 {
-  text-transform: uppercase;
-  color: #076031;
+#order_section p.tel {
+  color: #9cc419;
 }
 
 #contacts_section {
@@ -431,30 +427,21 @@ footer .logo {
   text-transform: uppercase;
   margin: 0;
 }
-#contacts_section .certificates {
-  width: 100%;
-  padding: 0 40px;
-  text-align: justify;
-  box-sizing: border-box;
-}
-#contacts_section .certificates a {
+#contacts_section a {
   text-decoration: none;
-  outline-style: none;
-  cursor: zoom-in;
+  color: #076031;
+  font-weight: bold;
 }
-#contacts_section .certificates:after {
-  content: "";
-  width: 100%;
-  display: inline-block;
+#contacts_section p {
+  font-size: 22px;
+  text-align: center;
 }
-#contacts_section .certificates img {
-  width: 8%;
-  margin: 0 5px;
-  height: auto;
-  display: inline-block;
-  border: 5px solid #b1ca5e;
-  border-radius: 5px;
+#contacts_section p:nth-of-type(2n+1) {
+  margin-top: 40px;
 }
-#contacts_section .content {
-  padding: 0 15%;
+#contacts_section p:nth-of-type(1) {
+  margin-top: 0;
+}
+#contacts_section p.tel {
+  color: #076031;
 }
