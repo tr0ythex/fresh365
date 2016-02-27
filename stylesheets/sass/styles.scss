@@ -243,24 +243,28 @@ footer {
     
     .slogan {
         width: 600px;
-        height: 300px;
+        height: auto;
         margin: auto;
-        position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
+        position: relative;
+        // top: 0; bottom: 0; left: 0; right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         color: white;
         text-align: center;
-        line-height: 3.7em;
+        line-height: 6vh;
         h2 {
-            font-size: 3.7em;
+            font-size: 6vh;
             font-weight: 100;
         }
         button {
             border: 2px solid white;
             border-radius: 21px;
-            font-size: 1.7em;
+            font-size: 3.5vh;
             color: white;
             padding: 10px;
-            width: 290px;
+            width: 250px;
             height: 60px;
             cursor: pointer;
             outline: none;
@@ -278,18 +282,18 @@ footer {
     padding: 110px 15% 20px;
     box-sizing: border-box;
     .about_section_pic {
-        width: 38%;
+        width: 23%;
         margin: 0 auto;
         display: block;
     }
     h2 {
         color: $about_section_h2;
         text-align: center;
-        font-size: 24px;
-        margin: 40px 0;
+        font-size: 3vh;
+        margin: 3vh 0;
     }
     p {
-        font-size: 18px;
+        font-size: 2.3vh;
         text-align: center;
     }
 }
@@ -297,161 +301,77 @@ footer {
     position: relative;
     .header_block {
         opacity: 0.3;
+        width: 250px;
+        height: auto;
+        position: absolute;
         h2 {
             color: $header_section_h2;
+            font-size: 3vh;
         }
-        width: 200px;
-        height: 300px;
-        position: absolute;
+        p {
+            font-size: 2.3vh;
+        }
         &.h_left {
-            left: 15%;
+            left: 10%;
         }
         &.h_top {
             top: 15%;
         }
         &.h_bottom {
-            bottom: 15%;
-            height: 200px;
+            bottom: 12%;
         }
         &.h_right {
-            right: 15%;
+            right: 10%;
+            text-align: right;
         }
     }
 }
 #product_section {
-    // background-image: url('../images/petrushka.jpg');
-    // #order_form {
-    //     display: block;
-    // }
-    // .order_block {
-    //     position: absolute;
-    //     width: 70%;
-    //     height: 50%;
-    //     top: 0;
-    //     bottom: 0;
-    //     right: 0;
-    //     left: 0;
-    //     margin: auto;
-    //     h2 {
-    //         color: white;
-    //         text-align: center;
-    //     }
-    //     #success_sent, #error_sent {
-    //         display: none;
-    //         position: absolute;
-    //         width: 70%;
-    //         height: 10%;
-    //         top: 0;
-    //         bottom: 0;
-    //         left: 0;
-    //         right: 0;
-    //         margin: auto;
-    //     }
-    // }
-    // .order_table {
-    //     width: 70%;
-    //     height: 100%;
-    //     min-height: 230px;
-    //     margin: 0 auto;
-    //     color: white;
-    //     text-align: center;
-    //     border-collapse: collapse;
-    //     th {
-    //         background: rgba(255, 255, 255, 0.75);
-    //         color: $border_heading;
-    //         border: 1px solid white;
-    //     }
-    //     td {
-    //         background: rgba(0, 0, 0, 0.3);
-    //         border: 1px solid white;
-    //     }
-    //     .buttons {
-    //         width: 40px;
-    //         background: none;
-    //         border: none;
-    //         div {
-    //             display: inline-block;
-    //             width: 22px;
-    //             height: 22px;
-    //             background: rgba(255, 255, 255, 0.8);
-    //             border-radius: 50%;
-    //             line-height: 22px;
-    //             color: $order_num_bg;
-    //             box-shadow: 0 0 10px black;
-    //             &.plus_btn {
-    //                 cursor: pointer;
-    //                 color: white;
-    //                 background-color: $plus_btn_bg;
-    //             }
-    //             &.minus_btn {
-    //                 cursor: pointer;
-    //                 color: white;
-    //                 border: 1px solid $minus_btn_border;
-    //                 background-color: rgba(255, 255, 255, 0.3);
-    //             }
-    //             &.clear_btn {
-    //                 cursor: pointer;
-    //                 background: none;
-    //                 color: red;
-    //                 box-shadow: none;
-    //                 text-shadow: 0px 0px 10px black;
-    //             }
-    //             &.disable {
-    //                 background: rgba(88, 88, 88, 0.7);
-    //                 color: white;
-    //             }
-    //             &.disable.clear_btn {
-    //                 background: none;
-    //                 color: black;
-    //             }
-    //             &.disable.minus_btn {
-    //                 border: none;
-    //             }
-    //         }
-    //     }
-    //     .credentials {
-    //         height: 55px;
-    //     }
-    //     .order {
-    //         height: 90px;
-    //     }
-    //     .credentials, .order, .heading {
-    //         td, th {
-    //             border: none;
-    //             background: none;
-    //         }
-    //     }
-    // }
     padding: 110px 15% 20px;
     box-sizing: border-box;
     text-align: center;
     .about_section_pic {
-        width: 38%;
+        width: 23%;
         margin: 0 auto;
         display: block;
     }
     h2 {
         color: $about_section_h2;
         text-align: center;
-        font-size: 24px;
-        margin: 40px 0;
+        font-size: 3vh;
+        margin: 3vh 0;
     }
     p {
-        font-size: 18px;
+        font-size: 2.3vh;
     }
     .vegetables_collection {
-        margin-top: 50px;
+        margin-top: 20px;
         min-width: 760px;
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Chrome */
+        display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        -webkit-justify-content: space-between; 
+        justify-content: space-between;
+        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+        flex-wrap: wrap;
+        // text-align: left;
         .vegetables_item {
+            text-align: left;
             display: inline-block;
             width: 15%;
             height: 30px;
             background: url(../images/onion.png) no-repeat top left;
             background-size: 30px 30px;
             color: $vegetable_item;
-            font-size: 1vw;
+            font-size: 2vh;
             padding-left: 30px;
             padding-top: 8px;
+            &:last-of-type {
+                width: 100%;
+                
+            }
         }
     }
 }
@@ -459,16 +379,16 @@ footer {
     padding-top: 80px;
     .heading {
         width: 100%;
-        height: 100px;
+        height: 80px;
         background-color: $novelty_heading;
         text-align: center;
-        line-height: 100px;
-        margin-bottom: 50px;
+        line-height: 80px;
+        margin-bottom: 4vh;
         h1 {
             margin: 0;
             text-transform: uppercase;
             color: white;
-            font-size: 2em;
+            font-size: 3vh;
         }
     }
     a {
@@ -477,10 +397,10 @@ footer {
         font-weight: bold;
     }
     p {
-        font-size: 22px;
+        font-size: 2.8vh;
         text-align: center;
         &:nth-of-type(8) {
-            margin-top: 50px;
+            margin-top: 4vh;
         }
         &.tel {
             color: $novelty_heading;
@@ -492,12 +412,12 @@ footer {
     box-sizing: border-box;
     .heading {
         width: 100%;
-        height: 100px;
-        line-height: 100px;
+        height: 80px;
+        line-height: 80px;
         text-align: center;
         h1 {
             color: $certificate_heading;
-            font-size: 2em;
+            font-size: 3vh;
             text-transform: uppercase;
             margin: 0;
         }
@@ -508,10 +428,10 @@ footer {
         font-weight: bold;
     }
     p {
-        font-size: 22px;
+        font-size: 2.7vh;
         text-align: center;
         &:nth-of-type(2n+1) {
-            margin-top: 40px;
+            margin-top: 2vh;
         }
         &:nth-of-type(1) {
             margin-top: 0;
@@ -520,31 +440,4 @@ footer {
             color: $certificate_heading;;
         }
     }
-    // .certificates {
-    //     width: 100%;
-    //     padding: 0 40px;
-    //     text-align: justify;
-    //     box-sizing: border-box;
-    //     a {
-    //         text-decoration: none;
-    //         outline-style: none;
-    //         cursor: zoom-in;
-    //     }
-    //     &:after {
-    //         content: "";
-    //         width: 100%;
-    //         display: inline-block;
-    //     }
-    //     img {
-    //         width: 8%;
-    //         margin: 0 5px;
-    //         height: auto;
-    //         display: inline-block;
-    //         border: 5px solid $cert_border;
-    //         border-radius: 5px;
-    //     }
-    // }
-    // .content {
-    //     padding: 0 15%;
-    // }
 }

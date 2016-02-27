@@ -141,54 +141,6 @@
       <p class="tel">+7 (495) 966-41-51, +7 (929) 936-78-68, +7 (929) 936-78-73</p>
       <p><strong>Почта:</strong></p>
       <p><a href="mailto:info@freshmarket365.ru">info@freshmarket365.ru</a></p>
-      <!--<div class="certificates">-->
-      <!--  <a class="certificate" href="images/certificates/cer-1.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-1.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-2.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-2.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-3.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-3.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-4.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-4.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-5.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-5.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-6.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-6.jpg">-->
-      <!--  </a>-->
-      <!--  <a class="certificate" href="images/certificates/cer-7.jpg">-->
-      <!--    <img id="cer-1" src="images/certificates/cer-7.jpg">-->
-      <!--  </a>-->
-      <!--</div>-->
-      <!--<div class="content">-->
-      <!--  <p>-->
-      <!--    Свежие овощи и зелень от компании Свежесть — 365 – -->
-      <!--    радуга вкуса и свежести  для потребителей России!-->
-      <!--  </p> -->
-      <!--  <p>-->
-      <!--    Для российских потребителей, на протяжении всего календарного года -->
-      <!--    мы предлагаем Вам овощи и зелень собственного производства!-->
-      <!--  </p>-->
-      <!--  <p>-->
-      <!--    Потратив всего 5 минут своего времени, Вы можете ознакомиться -->
-      <!--    с нашим широким ассортиментом, а так же узнать -->
-      <!--    о преимуществах сотрудничества с компанией «Свежесть» — 365.-->
-      <!--  </p>-->
-      <!--  <p>-->
-      <!--    Мы предлагаем широкий ассортимент продукции собственного производства мелким и -->
-      <!--    крупным оптом по приемлемым ценам. Вся продукция сертифицирована, имеет высокий -->
-      <!--    стандарт качества и полное соответствие экологическим и -->
-      <!--    санитарно-эпидемиологическим нормам, принятым в Российской Федерации. -->
-      <!--    Гарантию полной сохранности товарного вида и вкусовых качеств продукции -->
-      <!--    обеспечивают складские помещения, оснащенные специальным холодильным и -->
-      <!--    вентиляционным оборудованием, с обеспечением правильного температурного -->
-      <!--    режима, соблюдением санитарных норм и правил.-->
-      <!--  </p>-->
-      <!--</div>-->
       <footer>
           <div class="line1">
             <ul class="footer_menu">
