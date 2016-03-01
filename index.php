@@ -176,7 +176,6 @@
           </div>
           <div class="line2">
             <div class="copyright">© 2013-2016 "Свежесть&nbsp;365" Все права защищены</div>
-            <!-- &#8209; is a non-breaking hyphen -->
             <div class="address">г. Москва, Хлебозаводский проезд, д. 7, стр.9</div>
             <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
           </div>
@@ -268,8 +267,10 @@
     }
     
     function reset() {
-      alert('reset');
+      // alert('reset');
+      $('.header_block').stop(true, true);
       $('.header_block').css('opacity', 0.3);
+      $('#leaves_part').stop(true, true);
       $('#leaves_part').css({
         'width': 0,
         'left': '50%',
