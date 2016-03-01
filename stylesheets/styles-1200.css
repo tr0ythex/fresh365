@@ -7,10 +7,10 @@
     min-width: 0;
   }
   header.first_sec ul.main_menu li {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
   header.first_sec .phone {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   header.first_sec .logo {
     width: 10%;
@@ -25,10 +25,10 @@
     min-width: 0;
   }
   header.other_sec ul.main_menu li {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
   header.other_sec .phone {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   header.other_sec .logo {
     left: 7%;

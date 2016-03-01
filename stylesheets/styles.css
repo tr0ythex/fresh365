@@ -6,6 +6,24 @@
   /* Legacy iOS */
   font-weight: 300;
 }
+@font-face {
+  font-family: acBoucle;
+  src: url("../fonts/ACBoucle/ACBoucle.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ACBoucle/ACBoucle.eot?#iefix") format("embedded-opentype"), url("../fonts/ACBoucle/ACBoucle.woff") format("woff"), url("../fonts/ACBoucle/ACBoucle.ttf") format("truetype"), url("../fonts/ACBoucle/ACBoucle.svg#ACBoucle") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: segoeUi;
+  src: url("../fonts/SegoeUI/SegoeUI.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/ACBoucle/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI/SegoeUI.svg#SegoeUI") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
 html, body {
   height: 100%;
 }
@@ -41,8 +59,8 @@ input[type="submit"] {
 }
 
 body, button, input {
-  font-family: bloggerSansLightFont;
-  font-weight: 300;
+  font-family: segoeUi;
+  font-weight: normal;
 }
 
 section {
@@ -103,7 +121,7 @@ header ul.main_menu:after {
 header ul.main_menu li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 2.2vh;
 }
 header ul.main_menu li a {
   text-decoration: none;
@@ -117,7 +135,7 @@ header .logo {
 }
 header .phone {
   position: absolute;
-  font-size: 24px;
+  font-size: 2.8vh;
 }
 header.first_sec {
   width: 90%;
@@ -215,7 +233,7 @@ footer .line1 {
 footer .line1 .email {
   float: right;
   margin-left: 20px;
-  color: #b7d370;
+  color: #076031;
 }
 footer .line1 .phone {
   float: right;
@@ -272,10 +290,10 @@ footer .logo {
   transform: translateY(-50%);
   color: white;
   text-align: center;
-  line-height: 6vh;
+  line-height: 5.5vh;
 }
 #head_section .slogan h2 {
-  font-size: 6vh;
+  font-size: 5.5vh;
   font-weight: 100;
 }
 #head_section .slogan button {
@@ -283,7 +301,7 @@ footer .logo {
   border-radius: 21px;
   font-size: 3.5vh;
   color: white;
-  padding: 10px;
+  padding: 10px 10px 15px;
   width: 250px;
   height: 60px;
   cursor: pointer;
@@ -298,23 +316,37 @@ footer .logo {
 }
 
 #about_section {
-  padding: 110px 15% 20px;
+  padding: 110px 20% 20px;
   box-sizing: border-box;
+  text-align: left;
 }
-#about_section .about_section_pic {
-  width: 23%;
-  margin: 0 auto;
+#about_section .top_sec {
+  margin-bottom: 30px;
+}
+#about_section .top_sec:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#about_section .left_sec {
+  float: left;
+  width: 50%;
+}
+#about_section .left_sec .pic {
+  width: 220px;
   display: block;
+}
+#about_section .right_sec {
+  float: right;
+  width: 50%;
 }
 #about_section h2 {
   color: #076031;
-  text-align: center;
   font-size: 3vh;
   margin: 3vh 0;
 }
 #about_section p {
-  font-size: 2.3vh;
-  text-align: center;
+  font-size: 2.2vh;
 }
 
 #advantages_section {
@@ -322,7 +354,7 @@ footer .logo {
 }
 #advantages_section .header_block {
   opacity: 0.3;
-  width: 250px;
+  width: 270px;
   height: auto;
   position: absolute;
 }
@@ -331,7 +363,7 @@ footer .logo {
   font-size: 3vh;
 }
 #advantages_section .header_block p {
-  font-size: 2.3vh;
+  font-size: 2.2vh;
 }
 #advantages_section .header_block.h_left {
   left: 10%;
@@ -352,10 +384,29 @@ footer .logo {
   box-sizing: border-box;
   text-align: center;
 }
-#product_section .about_section_pic {
-  width: 23%;
-  margin: 0 auto;
+#product_section .top_sec {
+  margin-bottom: 20px;
+}
+#product_section .top_sec:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#product_section .left_sec {
+  float: left;
+  width: 50%;
+}
+#product_section .right_sec {
+  float: right;
+  width: 50%;
+}
+#product_section .right_sec .pic {
+  width: 220px;
   display: block;
+  margin: 0 auto;
+}
+#product_section .bottom_sec {
+  min-width: 560px;
 }
 #product_section h2 {
   color: #076031;
@@ -364,52 +415,35 @@ footer .logo {
   margin: 3vh 0;
 }
 #product_section p {
-  font-size: 2.3vh;
+  font-size: 2.2vh;
 }
 #product_section .vegetables_collection {
-  margin-top: 20px;
-  min-width: 760px;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  /* Safari 6.1+ */
-  flex-wrap: wrap;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
 }
 #product_section .vegetables_collection .vegetables_item {
   text-align: left;
-  display: inline-block;
-  width: 15%;
   height: 30px;
   background: url(../images/onion.png) no-repeat top left;
   background-size: 30px 30px;
   color: #467c5b;
-  font-size: 2vh;
+  font-size: 1.9vh;
   padding-left: 30px;
   padding-top: 8px;
-}
-#product_section .vegetables_collection .vegetables_item:last-of-type {
-  width: 100%;
 }
 
 #order_section {
   padding-top: 80px;
+  background-image: url(/images/petrushka.jpg);
+  color: white;
 }
 #order_section .heading {
   width: 100%;
-  height: 80px;
-  background-color: #9cc419;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   margin-bottom: 4vh;
 }
 #order_section .heading h1 {
@@ -420,18 +454,15 @@ footer .logo {
 }
 #order_section a {
   text-decoration: none;
-  color: #9cc419;
+  color: white;
   font-weight: bold;
 }
 #order_section p {
-  font-size: 2.8vh;
+  font-size: 2.7vh;
   text-align: center;
 }
 #order_section p:nth-of-type(8) {
   margin-top: 4vh;
-}
-#order_section p.tel {
-  color: #9cc419;
 }
 
 #contacts_section {
@@ -440,12 +471,14 @@ footer .logo {
 }
 #contacts_section .heading {
   width: 100%;
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
+  background-color: #9cc419;
+  margin-bottom: 20px;
 }
 #contacts_section .heading h1 {
-  color: #076031;
+  color: white;
   font-size: 3vh;
   text-transform: uppercase;
   margin: 0;
@@ -467,4 +500,5 @@ footer .logo {
 }
 #contacts_section p.tel {
   color: #076031;
+  font-weight: bold;
 }

@@ -47,20 +47,29 @@
       </div>
     </section>
     <section id="about_section">
-      <img class="about_section_pic" src="images/logo_2.png">
-      <h2>О компании</h2>
-      <p>Свежие овощи и зелень от компании Свежесть — 365 – радуга вкуса и свежести для потребителей России!</p>
-      <p>Для российских потребителей, на протяжении всего календарного года мы предлагаем Вам овощи 
-      и зелень собственного производства!</p>
-      <p>Уделив всего 5 минут своего времени, Вы можете ознакомиться с нашим широким ассортиментом, 
-      а так же узнать о преимуществах сотрудничества с компанией «Свежесть» — 365.</p>
-      <p>Мы выращиваем нашу продукцию на собственных плодородных землях площадью 200 га 
-      и предлагаем широкий ассортимент собственного производства мелким и крупным оптом по приемлемым ценам. 
-      Вся продукция сертифицирована, имеет высокий стандарт качества и полное соответствие экологическим 
-      и санитарно-эпидемиологическим нормам, принятым в Российской Федерации. 
-      Гарантию полной сохранности товарного вида и вкусовых качеств продукции обеспечивают складские помещения, 
-      оснащенные специальным холодильным и вентиляционным оборудованием, 
-      с обеспечением правильного температурного режима, соблюдением санитарных норм и правил.</p>
+      <div class="top_sec">
+        <div class="left_sec">
+          <img class="pic" src="images/logo_2.png">
+        </div>
+        <div class="right_sec">
+          <h2>О компании</h2>
+          <p>Свежие овощи и зелень от компании "Свежесть&nbsp;365" – радуга вкуса и свежести для потребителей России!<br>
+          Для российских потребителей, на протяжении всего календарного года мы предлагаем Вам овощи 
+          и зелень собственного производства!</p>
+        </div>
+      </div>
+      
+      <div class="bottom_sec">
+        <p>Уделив всего 5 минут своего времени, Вы можете ознакомиться с нашим широким ассортиментом, 
+        а так же узнать о преимуществах сотрудничества с компанией "Свежесть&nbsp;365".</p>
+        <p>Мы выращиваем нашу продукцию на собственных плодородных землях площадью 200 га 
+        и предлагаем широкий ассортимент собственного производства мелким и крупным оптом по приемлемым ценам. 
+        Вся продукция сертифицирована, имеет высокий стандарт качества и полное соответствие экологическим 
+        и санитарно-эпидемиологическим нормам, принятым в Российской Федерации. 
+        Гарантию полной сохранности товарного вида и вкусовых качеств продукции обеспечивают складские помещения, 
+        оснащенные специальным холодильным и вентиляционным оборудованием, 
+        с обеспечением правильного температурного режима, соблюдением санитарных норм и правил.</p>
+      </div>
     </section>
     <section id="advantages_section">
       <div id="freshmarket365_logo">
@@ -68,7 +77,7 @@
         <img id="leaves_part" src="images/logo_part.svg">
       </div>
       <div class="header_block h_left h_top">
-        <h2>Качество и документация</h2>
+        <h2>Контроль качества</h2>
         <p>Овощи и зелень соответствуют самым строгим требованиям экологической безопасности, 
         что регулярно подтверждается сертификатами качества. 
         По Вашему запросу готовы предоставить всю необходимую документацию.</p>
@@ -87,31 +96,44 @@
       </div>
       <div class="header_block h_left h_bottom">
         <h2>Конкурентные цены</h2>
-        <p>Наша компания предлагает Вам продукцию по самым выгодным и конкурентным ценам по Безналичной оплате с НДС.</p>
+        <p>Наша компания предлагает Вам продукцию по самым выгодным и конкурентным ценам по&nbsp;безналичной оплате с НДС.</p>
       </div>
     </section>
     <section id="product_section">
-      <img class="about_section_pic" src="images/trava_1.png">
-      <h2>О продукции</h2>
-      <p>Основным направлением нашей компании является выращивание овощей и зелени.</p>
-      <p>Ассортимент производимой нами продукции включает в себя такие позиции как:</p>
-      <div class="vegetables_collection">
-        <div class="vegetables_item">Лук зеленый</div>
-        <div class="vegetables_item">Укроп</div>
-        <div class="vegetables_item">Петрушка</div>
-        <div class="vegetables_item">Кинза</div>
-        <div class="vegetables_item">Щавель</div>
-        <div class="vegetables_item">Шпинат</div>
-        <div class="vegetables_item">Базилик</div>
-        <div class="vegetables_item">Огурцы</div>
-        <div class="vegetables_item">Помидоры</div>
-        <div class="vegetables_item">Кукуруза пищевая</div>
-        <div class="vegetables_item">Капуста белокочанная</div>
-        <div class="vegetables_item">Капуста пекинская</div>
-        <div class="vegetables_item">Редис</div>
-        <div class="vegetables_item">Картофель</div>
-        <div class="vegetables_item">Морковь</div>
-        <div class="vegetables_item">Салатная группа (Айсберг, руккола, романо, лолло россо и т.д.)</div>
+      <div class="top_sec">
+        <div class="left_sec">
+          <h2>О продукции</h2>
+          <p>Основным направлением нашей компании является выращивание овощей и зелени.</p>
+          <p>Ассортимент производимой нами продукции включает в себя такие позиции как:</p>
+        </div>
+        <div class="right_sec">
+          <img class="pic" src="images/trava_1.png">
+        </div>
+      </div>
+      <div class="bottom_sec">
+        <div class="vegetables_collection">
+          <div class="vegetables_item">Лук зеленый</div>
+          <div class="vegetables_item">Укроп</div>
+          <div class="vegetables_item">Петрушка</div>
+          <div class="vegetables_item">Кинза</div>
+          <div class="vegetables_item">Щавель</div>
+          <div class="vegetables_item">Шпинат</div>
+          <div class="vegetables_item">Базилик</div>
+        </div>
+        <div class="vegetables_collection">
+          <div class="vegetables_item">Огурцы</div>
+          <div class="vegetables_item">Помидоры</div>
+          <div class="vegetables_item">Кукуруза пищевая</div>
+          <div class="vegetables_item">Капуста белокочанная</div>
+          <div class="vegetables_item">Капуста пекинская</div>
+          <div class="vegetables_item">Редис</div>
+          <div class="vegetables_item">Картофель</div>
+          <div class="vegetables_item">Морковь</div>
+        </div>
+        <div class="vegetables_collection">
+          
+          <div class="vegetables_item">Салатная группа (Айсберг, руккола, романо, лолло россо и т.д.)</div>
+        </div>
       </div>
     </section>
     <section id="order_section">
@@ -146,14 +168,14 @@
             <ul class="footer_menu">
               <li><a class="a_about_section" href="#2">О компании</a></li>
               <li><a class="a_advantages_section" href="#3">Наши преимущества</a></li>
-              <li><a class="a_product_section" href="#4">Заголовок</a></li>
+              <li><a class="a_product_section" href="#4">О продукции</a></li>
               <li><a class="a_order_section" href="#5">Оформить заказ</a></li>
             </ul>
             <div class="email">info@freshmarket365.ru</div>
             <div class="phone">8 (495) 966-41-51</div>
           </div>
           <div class="line2">
-            <div class="copyright">© 2013-2016 «Свежесть – 365» Все права защищены</div>
+            <div class="copyright">© 2013-2016 "Свежесть&nbsp;365" Все права защищены</div>
             <!-- &#8209; is a non-breaking hyphen -->
             <div class="address">г. Москва, Хлебозаводский проезд, д. 7, стр.9</div>
             <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
@@ -246,6 +268,7 @@
     }
     
     function reset() {
+      alert('reset');
       $('.header_block').css('opacity', 0.3);
       $('#leaves_part').css({
         'width': 0,
