@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="fresh365">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="stylesheets/lib/magnific-popup.css" type="text/css">
 </head>
 
-<body ng-controller="vegCtrl">
+<body>
   <header class="other_sec">
     <a class="a_start_section" href="#1"><img class="logo" src="images/freshmarket365_logo.png"></a>
     
