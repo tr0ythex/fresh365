@@ -19,7 +19,7 @@
   font-family: segoeUi;
   src: url("../fonts/SegoeUI/SegoeUI.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/ACBoucle/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI/SegoeUI.svg#SegoeUI") format("svg");
+  src: url("../fonts/SegoeUI/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI/SegoeUI.svg#SegoeUI") format("svg");
   /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
@@ -75,6 +75,7 @@ section {
 
 .logo {
   position: absolute;
+  border: 0px;
 }
 
 #freshmarket365_logo {
@@ -388,7 +389,7 @@ footer .logo {
 }
 
 #product_section {
-  padding: 110px 15% 20px;
+  padding: 100px 15% 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -435,7 +436,7 @@ footer .logo {
   height: 30px;
   background: url(../images/onion.png) no-repeat top left;
   background-size: 30px 30px;
-  color: #467c5b;
+  color: #076031;
   font-size: 1.9vh;
   padding-left: 30px;
   padding-top: 8px;

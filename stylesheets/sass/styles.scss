@@ -49,6 +49,7 @@ section {
 }
 .logo {
     position: absolute;
+    border: 0px;
 }
 #freshmarket365_logo {
     display: block;
@@ -339,7 +340,7 @@ footer {
     }
 }
 #product_section {
-    padding: 110px 15% 20px;
+    padding: 100px 15% 20px;
     box-sizing: border-box;
     text-align: center;
     .top_sec {
@@ -375,23 +376,12 @@ footer {
         display: inline-block;
         width: 30%;
         vertical-align: top;
-        // display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-        // display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-        // display: -ms-flexbox; /* TWEENER - IE 10 */
-        // display: -webkit-flex; /* NEW - Chrome */
-        // display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-        // -webkit-justify-content: space-between; 
-        // justify-content: space-between;
-        // -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-        // flex-wrap: wrap;
         .vegetables_item {
             text-align: left;
-            // display: inline-block;
-            // width: 15%;
             height: 30px;
             background: url(../images/onion.png) no-repeat top left;
             background-size: 30px 30px;
-            color: $vegetable_item;
+            color: $about_section_h2;
             font-size: 1.9vh;
             padding-left: 30px;
             padding-top: 8px;
