@@ -374,6 +374,9 @@ footer .logo {
 #advantages_section .header_block p {
   font-size: 15px;
 }
+#advantages_section .header_block#fast {
+  width: 300px;
+}
 #advantages_section .header_block.h_left {
   left: 10%;
 }
@@ -389,12 +392,12 @@ footer .logo {
 }
 
 #product_section {
-  padding: 100px 15% 20px;
+  padding: 90px 15% 20px;
   box-sizing: border-box;
   text-align: center;
 }
 #product_section .top_sec {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #product_section .top_sec:after {
   content: "";
@@ -404,6 +407,7 @@ footer .logo {
 #product_section .left_sec {
   float: left;
   width: 50%;
+  padding-top: 50px;
 }
 #product_section .right_sec {
   float: right;
@@ -431,13 +435,21 @@ footer .logo {
   width: 30%;
   vertical-align: top;
 }
+#product_section .vegetables_collection .vc_header {
+  color: #076031;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 2vh;
+}
 #product_section .vegetables_collection .vegetables_item {
   text-align: left;
   height: 30px;
   background: url(../images/onion.png) no-repeat top left;
   background-size: 30px 30px;
   color: #076031;
-  font-size: 1.9vh;
+  font-size: 1.8vh;
   padding-left: 30px;
   padding-top: 8px;
 }
@@ -498,14 +510,9 @@ footer .logo {
   font-weight: bold;
 }
 #contacts_section p {
-  font-size: 2.7vh;
+  font-size: 2.4vh;
   text-align: center;
-}
-#contacts_section p:nth-of-type(2n+1) {
-  margin-top: 2vh;
-}
-#contacts_section p:nth-of-type(1) {
-  margin-top: 0;
+  margin: 10px 0;
 }
 #contacts_section p.tel {
   color: #076031;
