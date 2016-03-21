@@ -330,6 +330,7 @@ footer .logo {
   text-align: left;
 }
 #about_section .top_sec {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 #about_section .top_sec:after {
@@ -352,7 +353,7 @@ footer .logo {
 #about_section h2 {
   color: #076031;
   font-size: 3vh;
-  margin: 3vh 0;
+  margin: 5vh 0 3vh;
 }
 #about_section p {
   font-size: 2.2vh;
@@ -482,8 +483,8 @@ footer .logo {
   font-size: 2.7vh;
   text-align: center;
 }
-#order_section p:nth-of-type(8) {
-  margin-top: 4vh;
+#order_section p:first-of-type {
+  margin-top: 20vh;
 }
 
 #contacts_section {
